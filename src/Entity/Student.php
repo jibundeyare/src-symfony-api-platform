@@ -38,9 +38,9 @@ class Student
     private $lastname;
 
     /**
-     * @var boolean
+     * @var integer
      *
-     * @ORM\Column(name="sex", type="boolean", nullable=true, unique=false)
+     * @ORM\Column(name="sex", type="integer", nullable=true, unique=false)
      */
     private $sex;
 
@@ -123,7 +123,7 @@ class Student
     /**
      * Set sex
      *
-     * @param boolean $sex
+     * @param integer $sex
      *
      * @return Student
      */
@@ -137,7 +137,7 @@ class Student
     /**
      * Get sex
      *
-     * @return boolean
+     * @return integer
      */
     public function getSex()
     {

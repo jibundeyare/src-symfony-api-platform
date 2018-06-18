@@ -18,6 +18,6 @@ easy_admin:
                 fields:
                     - 'firstname'
                     - 'lastname'
-                    - 'sex'
-                    - { property: 'birthdate', type: 'birthday', type_options: { year: [1950, 2001] }}
+                    - { property: 'sex', type: 'choice', type_options: { choices: { 'F': 1, 'M': 2 }}}
+                    - { property: 'birthdate', type: 'birthday' }
                     - { property: 'promotion', type: 'entity', type_options: { choice_label: 'name' }}
